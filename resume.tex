@@ -1,7 +1,6 @@
 %-------------------------
 % Resume in Latex
 % Author : Ali Abdullah Khan
-
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -21,26 +20,12 @@
 \usepackage{fontawesome}
 \input{glyphtounicode}
 
-
-%---------- FONT OPTIONS ----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -48,29 +33,17 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -78,16 +51,6 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
-
-\newcommand{\resumeSubSubheading}[2]{
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -96,16 +59,6 @@
       \textit{\small#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-5pt}
 }
-
-
-\newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -113,30 +66,19 @@
       \textit{\small#3}
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%---------- HEADING ----------
 
 \begin{center}
     \textbf{\Huge \scshape Ali Abdullah Khan} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:905314204536}{929 444 2248}
+    \faMobile \hspace{.5pt} \href{tel:9294442248}{929 444 2248}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:arasgungore09@gmail.com}{abdullah017196@gmail.com}
+    \faAt \hspace{.5pt} \href{mailto:abdullah017196@gmail.com}{abdullah017196@gmail.com}
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/abdullah017196}{LinkedIn}
     $|$
@@ -147,120 +89,82 @@
     \faMapMarker \hspace{.5pt} {Holbrook, New York}
 \end{center}
 
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {JP Morgan Chase}{New York City, NY}
+    {Vice President of Software Engineering}{Feb 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{Led development of high-quality UIs tailored to user needs.}
+      \resumeItem{Defined UX standards, requirements, and design guidelines.}
+      \resumeItem{Collaborated with product managers and stakeholders to ensure consistent user experience.}
+      \resumeItem{Ensured timely delivery while maintaining high-quality standards.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {JP Morgan Chase}{New York City, NY}
+    {Associate Software Engineer}{Mar 2019 -- Feb 2023}
+    \resumeItemListStart
+      \resumeItem{Built and maintained QuickPay with Zelle and Credit Card Lending features.}
+      \resumeItem{Transformed design wireframes into modular UI using BlueJS.}
+      \resumeItem{Improved performance and optimized frontend responsiveness.}
+      \resumeItem{Enhanced accessibility to ensure full ADA compliance.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Charter Communications}{Charlotte, NC}
+    {Full Stack Software Developer}{May 2018 -- Feb 2019}
+    \resumeItemListStart
+      \resumeItem{Developed frontend for legacy systems with AngularJS, HTML, CSS.}
+      \resumeItem{Implemented full stack features using TypeScript, Node.js (REST APIs).}
+      \resumeItem{Worked in Agile teams using JIRA for issue tracking.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {AccordMS}{New York City, NY}
+    {Full Stack Software Developer}{Mar 2017 -- Apr 2018}
+    \resumeItemListStart
+      \resumeItem{Built web applications using CodeIgniter (PHP) with MySQL integration.}
+      \resumeItem{Streamlined ETL processes and modeled complex data sets.}
+      \resumeItem{Created responsive UIs with AngularJS, Bootstrap 3.}
+      \resumeItem{Enabled real-time P2P communication using WebSocket and Node.js.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Programming Languages:} JavaScript, TypeScript, Python, C, Bash \\
+    \textbf{Frameworks & Libraries:} ReactJS, AngularJS, VueJS, Peer.js, WebSocket, Bootstrap 4, Sass \\
+    \textbf{Tools & Platforms:} Node.js, REST APIs, Agile, JIRA
+  }
+\resumeSubHeadingListEnd
+
+
+%----------- CERTIFICATIONS -----------
+
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeOrganizationHeading
+    {AWS Certified Cloud Practitioner}{Sep 2023}{AWS Web Services, Cloud Computing, Cloud Platforms}
+\resumeSubHeadingListEnd
 
 
 %----------- EDUCATION -----------
 
 \section{Education}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    
-    \resumeEducationHeading
-      {North South University
-      % \normalfont{(Admission rate: 0.09\%)}
-      }{Dhaka, Bangladesh}
-      {Bachelor of Science in Computer Science and Engineering Computer Science;}{}
-    
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {North South University}{Dhaka, Bangladesh}
+    {Bachelor of Science in Computer Science and Engineering}{}
+\resumeSubHeadingListEnd
 
 
 
-%----------- SKILLS -----------
-
-\section{Skills}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Programming:}{  JavaScript, Typescript, Python, C, bash script } \\ \vspace{3pt}
-        
-        \textbf{Frameworks:}{  ReactJs, AngularJS , VueJS, Peer.js, Websocket, bootstrap 4, sass } \\ \vspace{3pt}
-        
-        % \textbf{Frameworks}{: X, X, X} \\
-        % \textbf{Developer Tools}{: X, X, X} \\
-        % \textbf{Libraries}{: X, X, X} \\
-        % \textbf{Applications}{: X, X, X}
-    }}
-  \resumeSubHeadingListEnd
-
-
-
-%----------- WORK EXPERIENCE -----------
-
-\section{Work Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-
-    %--------  current experince 
-
-        \resumeSubheading
-          {JP Morgan Chase}{New York City, NY}
-          {Vice President of Software Engineering}{Feb 2023 \textbf{--} Present}
-            \resumeItemListStart
-                \resumeItem{ Taking ownership for ensuring the team delivers high-quality user interfaces
-    that meet the needs and expectations of users. }
-                \resumeItem{ Working on defining the project’s UI/UX requirements, standards, and
-    guidelines. }
-                \resumeItem{ Collaborating with cross-functional teams such as product managers,
-    developers, and stakeholders to ensure that the final product meets the
-    desired user experience.}
-                \resumeItem{
-                Ensuring project deadlines are met and quality standards are upheld.
-                }
-            \resumeItemListEnd
-
-      \resumeSubheading
-          {JP Morgan Chase}{New York City,NY}
-          {Associate Software Engineer}{March 2019 \textbf{--} Feb 2023}
-            \resumeItemListStart
-                \resumeItem{ Developed and maintained features for the QuickPay with Zelle and Credit Card lending  }
-                \resumeItem{ Expertly transformed design wireframes into functional UI components using the BlueJS UI framework. }
-                \resumeItem{ Optimized the UI codebase to enhance speed and user experience. }
-                \resumeItem{ Enhanced website accessibility, ensuring full compliance with the American with Disabilities Act (ADA) standards. }
-            \resumeItemListEnd  
-
-        \resumeSubheading
-          {Charter Communications}{Charlotte,NC}
-          {Full Stack Software Developer}{May 2018 \textbf{--} February 2019}
-            \resumeItemListStart
-                \resumeItem{ Developed and maintained the frontend of legacy systems using AngularJS, HTML, and CSS. }
-                \resumeItem{ Use AngularJS along with TypeScript,html,css for frontend and NodeJs backend (RESTful
-architecture) }
-                \resumeItem{ Agile environment using JIRA System }
-                \resumeItem{ Engineered backend solutions using Node.js with RESTful architecture, enhancing system reliability and efficiency.}
-            \resumeItemListEnd  
-
-        \resumeSubheading
-          {AccordMS}{New York City,NY}
-          {Full Stack Software Developer}{March 2017 \textbf{--} April 2018}
-            \resumeItemListStart
-                \resumeItem{ Developed and maintained web applications using the CodeIgniter (PHP) Framework and integrated with MySQL databases.  }
-                \resumeItem{  Engineered and managed data workflows, including modeling and ETL processes, to integrate heterogeneous data sets into normalized views. }
-                \resumeItem{ Designed and developed responsive front-end user interfaces utilizing AngularJS, HTML, CSS, and Bootstrap 3. }
-                \resumeItem{ Implemented real-time, Peer-to-Peer communication capabilities using Node.js with WebSocket. }
-            \resumeItemListEnd 
-
-    
-  \resumeSubHeadingListEnd
-
-
-%----------- CERTIFICATES -----------
-
- \section{Certificates}
-   \resumeSubHeadingListStart
-    
-     \resumeOrganizationHeading
-       {AWS Certified Cloud Practitioner}{Sep 2023}{AWS Web Service, Cloud Computing,Cloud Platform}
-    
-   \resumeSubHeadingListEnd
-%----------- REFERENCES -----------
-
-% \section{References}
-  % \resumeSubHeadingListStart
-    
-  % \resumeSubHeadingListEnd
-
-
-
-%-------------------------------------------
 \end{document}
