@@ -3,7 +3,7 @@
 % Author : Ali Abdullah Khan
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -17,7 +17,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
-\usepackage{fontawesome}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -29,8 +28,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 \raggedbottom
@@ -38,7 +37,7 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
@@ -50,14 +49,6 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
-}
-\newcommand{\resumeEducationHeading}[6]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
@@ -76,31 +67,26 @@
 \begin{center}
     \textbf{\Huge \scshape Ali Abdullah Khan} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:9294442248}{929 444 2248}
+    \href{tel:9294442248}{929-444-2248}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:abdullah017196@gmail.com}{abdullah017196@gmail.com}
+    \href{mailto:abdullah017196@gmail.com}{abdullah017196@gmail.com}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/abdullah017196}{LinkedIn}
+    \href{https://www.linkedin.com/in/abdullah017196}{linkedin.com/in/abdullah017196}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/hellsalve017196}{GitHub}
+    \href{https://github.com/hellsalve017196}{github.com/hellsalve017196}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://alikhan.dev}{Portfolio}
+    \href{https://alikhan.dev}{alikhan.dev}
     $|$
-    \faMapMarker \hspace{.5pt} {Holbrook, New York}
+    Holbrook, New York
 \end{center}
 
 
-%----------- Objective -------------
-%----------- OBJECTIVE -----------
+%----------- SUMMARY -----------
 
-\section{Objective}
+\section{Summary}
 \resumeSubHeadingListStart
-  \item{
-    Accomplished Front-End Engineer with leadership experience as Vice President at JP Morgan Chase, specializing in building accessible, user-focused interfaces. Seeking to leverage expertise in modern JavaScript frameworks and cross-functional collaboration to contribute to innovative, impactful software solutions. Passionate about user experience, performance optimization, and team enablement in agile environments.
-  }
+  \item{\small Software Engineering leader with 7+ years at JP Morgan Chase building consumer payment platforms serving \textbf{\textasciitilde1 million daily users}. Proven track record owning full product lifecycles across planning, delivery, and post-release support, with deep expertise in React, TypeScript, and accessibility-first engineering.}
 \resumeSubHeadingListEnd
-
-
 
 
 %----------- WORK EXPERIENCE -----------
@@ -112,39 +98,27 @@
     {JP Morgan Chase}{New York City, NY}
     {Vice President of Software Engineering}{Feb 2023 -- Present}
     \resumeItemListStart
-      \resumeItem{Led development of high-quality UIs tailored to user needs.}
-      \resumeItem{Defined UX standards, requirements, and design guidelines.}
-      \resumeItem{Collaborated with product managers and stakeholders to ensure consistent user experience.}
-      \resumeItem{Ensured timely delivery while maintaining high-quality standards.}
+      \resumeItem{Led development of \textbf{Payment Activity} and \textbf{Transfer Activity} components, delivering high-visibility features across the consumer banking platform.}
+      \resumeItem{Served as \textbf{project coordinator} — drove end-to-end planning, sprint execution, stakeholder alignment, and post-release support.}
+      \resumeItem{Established engineering best practices and mentored associate engineers, raising code quality and team delivery velocity.}
     \resumeItemListEnd
 
   \resumeSubheading
     {JP Morgan Chase}{New York City, NY}
     {Associate Software Engineer}{Mar 2019 -- Feb 2023}
     \resumeItemListStart
-      \resumeItem{Built and maintained QuickPay with Zelle and Credit Card Lending features.}
-      \resumeItem{Transformed design wireframes into modular UI using BlueJS.}
-      \resumeItem{Improved performance and optimized frontend responsiveness.}
-      \resumeItem{Enhanced accessibility to ensure full ADA compliance.}
+      \resumeItem{Engineered and maintained \textbf{SingleDoor}, a unified payment platform consolidating BillPay, QuickPay with Zelle, and Credit Card payments, supporting \textbf{\textasciitilde1 million daily active users}.}
+      \resumeItem{Transformed design wireframes into modular, reusable UI components using BlueJS, improving development velocity across teams.}
+      \resumeItem{Built an internal \textbf{Chrome extension} to verify CDN artifact publication, streamlining release validation workflows for developers.}
+      \resumeItem{Integrated analytics tracking and resolved ADA accessibility issues to achieve full WCAG compliance across the SingleDoor platform.}
     \resumeItemListEnd
 
   \resumeSubheading
     {Charter Communications}{Charlotte, NC}
     {Full Stack Software Developer}{May 2018 -- Feb 2019}
     \resumeItemListStart
-      \resumeItem{Developed frontend for legacy systems with AngularJS, HTML, CSS.}
-      \resumeItem{Implemented full stack features using TypeScript, Node.js (REST APIs).}
-      \resumeItem{Worked in Agile teams using JIRA for issue tracking.}
-    \resumeItemListEnd
-
-  \resumeSubheading
-    {AccordMS}{New York City, NY}
-    {Full Stack Software Developer}{Mar 2017 -- Apr 2018}
-    \resumeItemListStart
-      \resumeItem{Built web applications using CodeIgniter (PHP) with MySQL integration.}
-      \resumeItem{Streamlined ETL processes and modeled complex data sets.}
-      \resumeItem{Created responsive UIs with AngularJS, Bootstrap 3.}
-      \resumeItem{Enabled real-time P2P communication using WebSocket and Node.js.}
+      \resumeItem{Modernized legacy systems by migrating UI components to AngularJS, improving maintainability and reducing technical debt.}
+      \resumeItem{Designed and implemented RESTful APIs using TypeScript and Node.js to support feature development across multiple internal products.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -154,9 +128,9 @@
 \section{Skills}
 \resumeSubHeadingListStart
   \item{
-    \textbf{Programming Languages:} JavaScript, TypeScript, Python, C, Bash \\
-    \textbf{Frameworks & Libraries:} ReactJS, AngularJS, VueJS, Peer.js, WebSocket, Bootstrap 4, Sass \\
-    \textbf{Tools & Platforms:} Node.js, REST APIs, Agile, JIRA
+    \textbf{Languages:} JavaScript (ES6+), TypeScript, Python, Bash \\
+    \textbf{Frameworks \& Libraries:} React, AngularJS, Vue.js, Node.js, Bootstrap, Sass, WebSocket \\
+    \textbf{Tools \& Practices:} Git, Webpack, REST APIs, AWS, JIRA, Jest, CI/CD, Agile/Scrum, WCAG/ADA
   }
 \resumeSubHeadingListEnd
 
@@ -176,9 +150,8 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {North South University}{Dhaka, Bangladesh}
-    {Bachelor of Science in Computer Science and Engineering}{}
+    {Bachelor of Science in Computer Science and Engineering}{2016}
 \resumeSubHeadingListEnd
-
 
 
 \end{document}
