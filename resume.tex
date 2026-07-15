@@ -45,17 +45,24 @@
 \newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \begin{minipage}[t]{0.67\textwidth}
+      \textbf{#1} \\
+      \textit{\small#3}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.30\textwidth}\raggedleft
+      #2 \\
+      \textit{\small #4}
+    \end{minipage}\vspace{-7pt}
 }
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+    \begin{minipage}[t]{0.67\textwidth}
+      \textbf{#1} \\
       \textit{\small#3}
-    \end{tabular*}\vspace{-7pt}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.30\textwidth}\raggedleft
+      \textit{\small #2}
+    \end{minipage}\vspace{-7pt}
 }
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -68,17 +75,17 @@
     \textbf{\Huge \scshape Ali Abdullah Khan} \\ \vspace{3pt}
     \small
     \href{tel:9294442248}{929-444-2248}
-    $|$
+    \textbar{}
     \href{mailto:abdullah017196@gmail.com}{abdullah017196@gmail.com}
-    $|$
+    \textbar{}
     \href{https://www.linkedin.com/in/abdullah017196}{linkedin.com/in/abdullah017196}
-    $|$
+    \textbar{}
     \href{https://github.com/hellsalve017196}{github.com/hellsalve017196}
-    $|$
+    \textbar{}
     \href{https://alikhan.dev}{alikhan.dev}
-    $|$
+    \textbar{}
     Holbrook, New York, USA
-    $|$
+    \textbar{}
     U.S. Citizen -- No sponsorship required
 \end{center}
 
