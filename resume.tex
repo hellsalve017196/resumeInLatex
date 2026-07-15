@@ -17,7 +17,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
-\input{glyphtounicode}
+% \input{glyphtounicode} % Not needed with XeTeX (tectonic)
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -40,7 +40,7 @@
   \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-\pdfgentounicode=1
+% \pdfgentounicode=1 % Not needed with XeTeX (tectonic)
 
 \newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
@@ -77,7 +77,9 @@
     $|$
     \href{https://alikhan.dev}{alikhan.dev}
     $|$
-    Holbrook, New York
+    Holbrook, New York, USA
+    $|$
+    U.S. Citizen -- No sponsorship required
 \end{center}
 
 
@@ -98,6 +100,9 @@
     {JP Morgan Chase}{New York City, NY}
     {Vice President of Software Engineering}{Feb 2023 -- Present}
     \resumeItemListStart
+      \resumeItem{Pioneered an \textbf{AI-driven SDLC workflow} using GitHub Copilot paired with a structured knowledge-base (Obsidian), automating JIRA requirements intake, PRD generation, task decomposition, and code delivery — significantly reducing cycle time from requirements to production.}
+      \resumeItem{Achieved comprehensive \textbf{test automation coverage} by leveraging AI-assisted generation of unit, component, and E2E test suites, improving regression confidence and reducing QA bottlenecks.}
+      \resumeItem{Built internal CLI tools for \textbf{production CDN artifact publishing} and \textbf{feature flag management}, eliminating manual release steps and enabling self-service deployments for the team.}
       \resumeItem{Led development of \textbf{Payment Activity} and \textbf{Transfer Activity} components, delivering high-visibility features across the consumer banking platform.}
       \resumeItem{Served as \textbf{project coordinator} — drove end-to-end planning, sprint execution, stakeholder alignment, and post-release support.}
       \resumeItem{Established engineering best practices and mentored associate engineers, raising code quality and team delivery velocity.}
@@ -140,7 +145,7 @@
 \section{Certifications}
 \resumeSubHeadingListStart
   \resumeOrganizationHeading
-    {AWS Certified Cloud Practitioner}{Sep 2023}{AWS Web Services, Cloud Computing, Cloud Platforms}
+    {AWS Certified Cloud Practitioner}{Sep 2023}{AWS Web Services, Cloud Computing, Cloud Platforms}{}
 \resumeSubHeadingListEnd
 
 
@@ -150,7 +155,7 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {North South University}{Dhaka, Bangladesh}
-    {Bachelor of Science in Computer Science and Engineering}{2016}
+    {Bachelor of Science in Computer Science and Engineering}{}
 \resumeSubHeadingListEnd
 
 
