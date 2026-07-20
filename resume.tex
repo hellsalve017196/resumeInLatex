@@ -28,8 +28,10 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.2in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=3pt}
 
 \urlstyle{same}
 \raggedbottom
@@ -37,8 +39,8 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % \pdfgentounicode=1 % Not needed with XeTeX (tectonic)
 
@@ -52,7 +54,7 @@
     \begin{minipage}[t]{0.30\textwidth}\raggedleft
       #2 \\
       \textit{\small #4}
-    \end{minipage}\vspace{-7pt}
+    \end{minipage}\vspace{-2pt}
 }
 \newcommand{\resumeOrganizationHeading}[4]{
   \vspace{-2pt}\item
@@ -62,17 +64,18 @@
     \end{minipage}\hfill
     \begin{minipage}[t]{0.30\textwidth}\raggedleft
       \textit{\small #2}
-    \end{minipage}\vspace{-7pt}
+    \end{minipage}\vspace{-2pt}
 }
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \begin{document}
 
 \begin{center}
     \textbf{\Huge \scshape Ali Abdullah Khan} \\ \vspace{3pt}
+    \textbf{\small Software Engineering Leader \textbar{} React \& TypeScript \textbar{} Consumer Payment Platforms} \\ \vspace{3pt}
     \small
     \href{tel:9294442248}{929-444-2248}
     \textbar{}
@@ -92,67 +95,78 @@
 
 %----------- SUMMARY -----------
 
-\section{Summary}
+\section{Professional Summary}
 \resumeSubHeadingListStart
-  \item{\small Software Engineering leader with 7+ years at JP Morgan Chase building consumer payment platforms serving \textbf{\textasciitilde1 million daily users}. Proven track record owning full product lifecycles across planning, delivery, and post-release support, with deep expertise in React, TypeScript, and accessibility-first engineering.}
+  \item{\small Software engineering leader with 7+ years of experience delivering high-scale consumer banking and payment products, including platforms serving approximately 1 million daily users. Leads full product lifecycles from planning and architecture through agile delivery, release readiness, and production support. Deep expertise in React, TypeScript, JavaScript, reusable UI architecture, analytics, and WCAG/ADA accessibility, with a record of mentoring engineers and improving engineering practices.}
+\resumeSubHeadingListEnd
+
+
+%----------- CORE COMPETENCIES -----------
+
+\section{Core Competencies}
+\resumeSubHeadingListStart
+  \item{\small Engineering Leadership \textbar{} Front-End Architecture \textbar{} React \textbar{} TypeScript \textbar{} JavaScript (ES6+) \textbar{} Node.js \textbar{} Consumer Payments \textbar{} REST APIs \textbar{} Accessibility (WCAG/ADA) \textbar{} Agile/Scrum \textbar{} Agentic-Driven Development \textbar{} Stakeholder Management \textbar{} CI/CD \textbar{} Testing \textbar{} Mentoring}
 \resumeSubHeadingListEnd
 
 
 %----------- WORK EXPERIENCE -----------
 
-\section{Work Experience}
+\section{Professional Experience}
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {JP Morgan Chase}{New York City, NY}
-    {Vice President of Software Engineering}{Feb 2023 -- Present}
+    {JPMorgan Chase \& Co.}{New York, NY}
+    {Vice President, Software Engineering}{Feb 2023 -- Present}
     \resumeItemListStart
-      \resumeItem{Pioneered an \textbf{AI-driven SDLC workflow} using GitHub Copilot paired with a structured knowledge-base (Obsidian), automating JIRA requirements intake, PRD generation, task decomposition, and code delivery — significantly reducing cycle time from requirements to production.}
-      \resumeItem{Achieved comprehensive \textbf{test automation coverage} by leveraging AI-assisted generation of unit, component, and E2E test suites, improving regression confidence and reducing QA bottlenecks.}
-      \resumeItem{Built internal CLI tools for \textbf{production CDN artifact publishing} and \textbf{feature flag management}, eliminating manual release steps and enabling self-service deployments for the team.}
-      \resumeItem{Led development of \textbf{Payment Activity} and \textbf{Transfer Activity} components, delivering high-visibility features across the consumer banking platform.}
-      \resumeItem{Served as \textbf{project coordinator} — drove end-to-end planning, sprint execution, stakeholder alignment, and post-release support.}
-      \resumeItem{Established engineering best practices and mentored associate engineers, raising code quality and team delivery velocity.}
+      \resumeItem{Lead development of Payment Activity and Transfer Activity experiences across the consumer banking platform, delivering high-visibility payment capabilities for a large-scale customer base.}
+      \resumeItem{Own end-to-end execution across roadmap planning, sprint delivery, cross-functional stakeholder alignment, release coordination, and post-production support.}
+      \resumeItem{Establish front-end engineering standards and mentor associate engineers, strengthening code quality, maintainability, accessibility, and delivery consistency.}
+      \resumeItem{Partner with product, design, analytics, and engineering stakeholders to translate customer and business requirements into scalable, reusable software solutions.}
+      \resumeItem{Drive an AI-assisted software development lifecycle using GitHub Copilot and a structured knowledge base, automating requirements intake, PRD generation, task decomposition, and code delivery to reduce cycle time from requirements to production.}
+      \resumeItem{Expand automated test coverage across unit, component, and end-to-end suites through AI-assisted test generation, improving regression confidence and reducing QA bottlenecks.}
+      \resumeItem{Build internal CLI tooling for production CDN artifact publishing and feature flag management, eliminating manual release steps and enabling self-service deployments.}
     \resumeItemListEnd
 
   \resumeSubheading
-    {JP Morgan Chase}{New York City, NY}
+    {JPMorgan Chase \& Co.}{New York, NY}
     {Associate Software Engineer}{Mar 2019 -- Feb 2023}
     \resumeItemListStart
-      \resumeItem{Engineered and maintained \textbf{SingleDoor}, a unified payment platform consolidating BillPay, QuickPay with Zelle, and Credit Card payments, supporting \textbf{\textasciitilde1 million daily active users}.}
-      \resumeItem{Transformed design wireframes into modular, reusable UI components using BlueJS, improving development velocity across teams.}
-      \resumeItem{Built an internal \textbf{Chrome extension} to verify CDN artifact publication, streamlining release validation workflows for developers.}
-      \resumeItem{Integrated analytics tracking and resolved ADA accessibility issues to achieve full WCAG compliance across the SingleDoor platform.}
+      \resumeItem{Engineered and maintained SingleDoor, a unified payment platform integrating Bill Pay, QuickPay with Zelle, and credit card payment workflows for approximately 1 million daily users.}
+      \resumeItem{Converted design wireframes into modular, reusable UI components using BlueJS, improving consistency and accelerating feature development across engineering teams.}
+      \resumeItem{Built an internal Chrome extension that verified CDN artifact publication, simplifying release validation and reducing manual checks for developers.}
+      \resumeItem{Implemented analytics instrumentation and remediated accessibility defects, enabling WCAG/ADA-compliant customer experiences across the SingleDoor platform.}
+      \resumeItem{Supported production releases and issue resolution in a highly regulated financial-services environment, collaborating across product and technology teams.}
     \resumeItemListEnd
 
   \resumeSubheading
     {Charter Communications}{Charlotte, NC}
     {Full Stack Software Developer}{May 2018 -- Feb 2019}
     \resumeItemListStart
-      \resumeItem{Modernized legacy systems by migrating UI components to AngularJS, improving maintainability and reducing technical debt.}
-      \resumeItem{Designed and implemented RESTful APIs using TypeScript and Node.js to support feature development across multiple internal products.}
+      \resumeItem{Modernized legacy applications by migrating user-interface components to AngularJS, improving maintainability and reducing technical debt.}
+      \resumeItem{Designed and implemented RESTful APIs with TypeScript and Node.js to support feature delivery across multiple internal products.}
+      \resumeItem{Collaborated with cross-functional teams throughout design, development, testing, and deployment in an Agile delivery environment.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
 
-\section{Skills}
+\section{Technical Skills}
 \resumeSubHeadingListStart
   \item{
     \textbf{Languages:} JavaScript (ES6+), TypeScript, Python, Bash \\
-    \textbf{Frameworks \& Libraries:} React, AngularJS, Vue.js, Node.js, Bootstrap, Sass, WebSocket \\
-    \textbf{Tools \& Practices:} Git, Webpack, REST APIs, AWS, JIRA, Jest, CI/CD, Agile/Scrum, WCAG/ADA
+    \textbf{Frameworks \& Libraries:} React, AngularJS, Vue.js, Node.js, Bootstrap, Sass, WebSocket, BlueJS \\
+    \textbf{Cloud, Tools \& Practices:} AWS, Git, Webpack, REST APIs, JIRA, Jest, CI/CD, Agile/Scrum, WCAG, ADA, analytics instrumentation
   }
 \resumeSubHeadingListEnd
 
 
 %----------- CERTIFICATIONS -----------
 
-\section{Certifications}
+\section{Certification}
 \resumeSubHeadingListStart
   \resumeOrganizationHeading
-    {AWS Certified Cloud Practitioner}{Sep 2023}{AWS Web Services, Cloud Computing, Cloud Platforms}{}
+    {AWS Certified Cloud Practitioner}{Sep 2023}{Amazon Web Services}{}
 \resumeSubHeadingListEnd
 
 
