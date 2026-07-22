@@ -1,0 +1,12 @@
+# Claude Code local settings (machine-specific, not shared)
+.claude/settings.local.json
+
+# LaTeX build byproducts — we commit Ali_Abdullah_Khan_*.pdf instead
+resume.pdf
+coverletter.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
