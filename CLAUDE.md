@@ -32,6 +32,16 @@ To eyeball the rendered layout, rasterize to PNG in the scratchpad and read the 
 pdftoppm -png -r 100 Ali_Abdullah_Khan_Resume.pdf <scratchpad>/resume_check
 ```
 
+## Commit & push after every change
+
+Whenever you change `resume.tex` or `coverletter.tex`, the standing workflow is: **edit →
+rebuild the PDF → verify one page → commit → push to GitHub.** Don't wait to be asked to commit;
+pushing is part of "make the change." Stage the edited `.tex` and its regenerated PDF, write a
+concise commit message describing the content change, and `git push` to the current branch.
+
+Do **not** add a `Co-Authored-By: Claude` trailer to the commit (it surfaces a Claude icon on
+GitHub).
+
 ## Editing conventions
 
 - Use the existing macros (`\resumeItem`, `\resumeSubheading`, `\resumeOrganizationHeading`,
