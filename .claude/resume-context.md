@@ -108,6 +108,35 @@ Splunk logs. Edits applied on that basis (resume rebuilt, verified one page):
    bullet deleted; fluff tails cut from the VP lead-development bullet and the Associate
    "supported production releases" bullet.
 
+## Applied edits — 5 Aug 2026
+
+Ali supplied a per-period timeline (`draft.md`, his own notes) mapping his JPMC tenure to concrete
+products. New facts confirmed real on that basis:
+
+- **2020–2022 (Associate, credit card team / CCB):** built a **credit card debt-repayment /
+  hardship experience** — customers unable to pay their full balance enroll in structured payment
+  plans. BlueJS components from Figma designs, end-to-end test scripts, shipped via CDN artifact
+  releases.
+- **2022–2025 (Associate→Lead):** returned to the SingleDoor team and **re-wrote SingleDoor in
+  React**; also built Payment Activity (aggregates credit card activity).
+- **2025–present (Lead, Transfer Activity team):** **re-wrote wire-transfer and account-transfer
+  pages from legacy BlueJS to React with full ownership.**
+
+Edits applied to `resume.tex` (rebuilt, one page, ATS gate passed):
+
+1. Lead-role lead bullet extended to name the modernization arc: "…re-architecting legacy
+   wire-transfer, account-transfer, and payment pages from BlueJS to React." Captures both the
+   Transfer Activity migration and the SingleDoor/Payment React rewrite in one bullet.
+2. Associate role: **replaced** the pure-execution "converted wireframes into BlueJS components"
+   bullet (rule 1 / the audit's flagged execution phrasing) with the credit-card debt-repayment
+   **product** bullet — net-neutral on bullet count, a positioning upgrade.
+3. Dropped a "with full ownership" tail (bullet 2 already carries end-to-end ownership) and the
+   "CDN artifact releases" tail (duplicates the Associate Chrome-extension bullet) to hold one page.
+
+Net effect on positioning: the **BlueJS→React modernization arc** is now explicit (ownership +
+systems thinking), and Associate-era work now leads with two concrete products (SingleDoor, credit
+card repayment) instead of execution filler.
+
 ## Still open — revisit when facts allow
 
 - Quantified reliability outcomes (incidents resolved, regression escape rate, release
@@ -116,6 +145,9 @@ Splunk logs. Edits applied on that basis (resume rebuilt, verified one page):
 - Databases: none confirmed; leave absent until real (operated-reps bar applies).
 - Optional: name the full-stack roots (Charter, Node.js/REST) explicitly in the summary if
   space ever allows; the arc is currently implied rather than stated.
+- The credit-card repayment bullet's **CDN artifact release** detail is real but was trimmed for
+  space/redundancy; restore it if the Chrome-extension bullet ever goes and a release-ownership
+  signal is needed there.
 
 ## Editing rules for this repo
 
