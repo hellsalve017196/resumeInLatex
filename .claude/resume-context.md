@@ -56,9 +56,10 @@ Gaps relative to the thesis (status updated 26 Jul 2026 after edits):
 - **Headline layer-bound — fixed.** Now `Software Engineering Leader | Consumer Payment Platforms
   | End-to-End Product Ownership`; React/TypeScript remain in the summary, competencies, and
   skills. Restore stack tokens to the headline only for front-end-titled postings.
-- **Back-end / systems substrate — partially covered.** API contract design and Splunk-based
-  production triage are now on the resume (both confirmed real by Ali). Caching, queues, and data
-  modeling remain absent — correctly so, per the operated-reps bar (rule 8 below).
+- **Back-end / systems substrate — partially covered.** API contract design, Splunk-based
+  production triage, and Java/Spring Boot endpoint contributions are now on the resume (all
+  confirmed real by Ali). Caching, queues, and data modeling remain absent — correctly so, per the
+  operated-reps bar (rule 8 below).
 - **Few explicit trade-off statements — still open.** One or two "chose X over Y because Z"
   bullets would carry disproportionate weight.
 - **Failure/reliability language — improved.** Splunk triage of customer-impacting issues now
@@ -136,6 +137,32 @@ Edits applied to `resume.tex` (rebuilt, one page, ATS gate passed):
 Net effect on positioning: the **BlueJS→React modernization arc** is now explicit (ownership +
 systems thinking), and Associate-era work now leads with two concrete products (SingleDoor, credit
 card repayment) instead of execution filler.
+
+## Applied edits — 25 Sep 2026
+
+Ali asked to add Java and Spring Boot to the skills section and to the JPMC role bullets. Depth
+confirmed in session: **contributed endpoints** — he has made real changes to existing Spring Boot
+services (adding and reshaping REST endpoints, alongside the client work) but does **not** own a
+service end to end. Wording was calibrated to that bar (rule 8): *extend* / *contributing endpoint
+changes*, never *built* or *owned*.
+
+Edits applied to `resume.tex` (rebuilt, one page, ATS gate passed):
+
+1. Summary: "…from API contract design **in Java/Spring Boot services** through release and
+   production triage."
+2. Lead role: the API-contract bullet absorbed the service work rather than adding a bullet —
+   "Extend Java/Spring Boot services behind Transfer and Payment Activity, adding and reshaping
+   REST endpoints, and partner with product and backend engineering on API contract design so
+   payment components render faster." Keeps the render-performance outcome intact.
+3. Associate role: the credit-card repayment bullet now includes "contributing endpoint changes to
+   the Java/Spring Boot services behind the flow."
+4. Technical Skills: Java added to Languages; Spring Boot added to Frameworks \& Libraries.
+5. Core Competencies deliberately left untouched — rule 5 keeps languages and frameworks out of it.
+
+Interview exposure to be ready for: which endpoints he changed and why, how the contract was
+agreed with the backend team, and how the change was tested and released. If a follow-up would
+break, downgrade bullet 2 to the Splunk-triage framing ("…across the React client and the
+Java/Spring Boot services behind it").
 
 ## Still open — revisit when facts allow
 
